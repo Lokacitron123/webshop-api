@@ -1,0 +1,28 @@
+{
+  "name": "@plugga-tech/webshop-api-js-template",
+  "version": "1.0.0",
+  "description": "En självrättande inlämning för att bygga ett node API för en enklare webshop.",
+  "keywords": [],
+  "author": "Plugga Tech",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "plugga init",
+    "dev": "nodemon src/server.js",
+    "update": "plugga update",
+    "test": "plugga test -f vitest",
+    "test:g": "plugga test -f vitest --g",
+    "test:vg": "plugga test -f vitest --vg"
+  },
+  "dependencies": {
+    "@plugga-tech/webshop-api-js": "^1.0.14",
+    "bcrypt": "^5.1.0",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "mongoose": "^6.8.3",
+    "npx": "^10.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

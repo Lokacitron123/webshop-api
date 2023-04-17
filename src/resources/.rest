@@ -1,0 +1,74 @@
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "gunilla@gmail.com",
+    "password": "1919191919"
+}
+
+###
+POST http://localhost:/3000/api/users/login
+Content-Type: application/json
+
+{
+    "username": "gunilla@gmail.com",
+    "password": "1919191919"
+}
+
+###
+GET http://localhost:3000/api/categories
+
+###
+
+GET http://localhost:3000/api/categories/63d11c7051aeb82e8b393451
+
+
+###
+
+
+
+###
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+
+{
+  
+"title":"Product 2",
+"description":"Lorem lorem",
+"price":100,
+"image":"https://user-images.githubusercontent.com/17639389/210451386-ac03b6e8-…",
+"inStock":10,
+"categories":"63d2d4872648ac0e64e1ecee"
+}
+
+###
+GET http://localhost:3000/api/products/63d2d6b48ab76c83763b66922
+
+
+###
+GET http://localhost:3000/api/products/byCategory/63d2d4872648ac0e64e1ecee
+
+###
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+
+
+{
+  "orderItems": [
+    { "product": "63d3bf5f370a49163f6ae182", "quantity": 1 },
+    { "product": "63d3bf5f370a49163f6ae183", "quantity": 1 },
+    { "product": "63d3bf5f370a49163f6ae184", "quantity": 1 },
+    { "product": "63d3bf5f370a49163f6ae185", "quantity": 1 },
+    { "product": "63d3bf5f370a49163f6ae186", "quantity": 1 }
+  ],
+  "deliveryAddress": {
+    "street": "Testvägen 1",
+    "zipcode": "12345",
+    "city": "Borås",
+    "country": "Sverige"
+  }
+}
+
+
+
